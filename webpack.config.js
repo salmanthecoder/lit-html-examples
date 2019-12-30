@@ -59,6 +59,10 @@ module.exports = ({ mode, presets }) => {
       output: {
         filename: '[name].[chunkhash:8].js'
       },
+      devServer: {
+        host: '0.0.0.0',
+        port: 8084,
+      },
       module: {
         rules: [
           {
@@ -82,6 +86,7 @@ module.exports = ({ mode, presets }) => {
       },
       plugins
     },
+    
     modeConfig({ mode, presets }),
     loadPresets({ mode, presets })
   );
