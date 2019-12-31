@@ -9,6 +9,5 @@ services:
       - 8080
     networks:
       - network1
-
 networks:
   network1:
