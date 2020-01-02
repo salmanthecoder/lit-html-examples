@@ -6,9 +6,9 @@
   "scripts": {
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server --history-api-fallback",
-    "start": "npm run webpack -- --env.mode production --env.presets serviceworker",
+    "start": "npm run webpack -- --env.mode production --env.presets serviceworker && node index.js",
     "dev": "npm run webpack-dev-server -- --env.mode development",
-    "start-dev": "npm run webpack-dev-server -- --env.mode development  --env.presets serviceworker"
+    "start-prod": "npm run start && node index.js"
   },
   "repository": {
     "type": "git",
